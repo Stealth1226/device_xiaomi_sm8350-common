@@ -489,8 +489,10 @@
         </interface>
         <fqname>@1.0::IMiPostProcService/default</fqname>
     </hal>
-    <sepolicy>
-        <version>30.0</version>
-    </sepolicy>
-    <kernel target-level="5"/>
+    <hal format="hidl">
+        <name>com.fingerprints.extension</name>
+        <transport>hwbinder</transport>
+        <fqname>@3.0::IFingerprintSensorTest/default</fqname>
+        <fqname>@3.0::IFingerprintNavigation/default</fqname>
+    </hal>
 </manifest>
